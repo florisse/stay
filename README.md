@@ -24,8 +24,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/florisse/stay)
-- Live Site URL: [Add live site URL here](https://stay-email.surge.sh)
+- Solution URL: [https://github.com/florisse/stay](https://github.com/florisse/stay)
+- Live Site URL: [https://stay-email.surge.sh](https://stay-email.surge.sh)
 
 ## Screenshot
 
