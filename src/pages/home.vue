@@ -14,9 +14,11 @@
       <Check />
       <Email @submit="submitForm" />
     </div>
-    <img class="md:flex hidden" src="../assets/illustation.svg" alt="" />
-    <div class="flex items-center w-full">
-      <img class="md:hidden w-full flex" src="../assets/mobil.svg" alt="" />
+<div :class="animate" class="w-[400px] flex-shrink-0 h-[593px] bg-slate-700   rounded-2xl">
+  <img class="md:flex hidden" src="../assets/illustation.svg" alt="" @load="animate=''"  loading="lazy"/>
+
+</div>    <div class="flex items-center w-full">
+      <img class="md:hidden w-full flex" src="../assets/mobil.svg" alt="" loading="lazy" />
     </div>
   </div>
   <div v-else>
@@ -30,6 +32,7 @@ import Check from "../components/checkPart.vue";
 import Email from "../components/emailPart.vue";
 import { ref } from "vue";
 const success = ref(false);
+const animate = ref('animate-pulse')
 function submitForm() {
   console.log("form submitted");
   success.value = true;
